@@ -1,0 +1,81 @@
+{
+  "format": 1,
+  "restore": {
+    "/Users/cagriergin/Development/Web/NET_Core/cihan/text_summary/text_summary/text_summary.csproj": {}
+  },
+  "projects": {
+    "/Users/cagriergin/Development/Web/NET_Core/cihan/text_summary/text_summary/text_summary.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/cagriergin/Development/Web/NET_Core/cihan/text_summary/text_summary/text_summary.csproj",
+        "projectName": "text_summary",
+        "projectPath": "/Users/cagriergin/Development/Web/NET_Core/cihan/text_summary/text_summary/text_summary.csproj",
+        "packagesPath": "/Users/cagriergin/.nuget/packages/",
+        "outputPath": "/Users/cagriergin/Development/Web/NET_Core/cihan/text_summary/text_summary/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/cagriergin/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "Azure.AI.TextAnalytics": {
+              "target": "Package",
+              "version": "[5.2.0, )"
+            },
+            "Microsoft.ML": {
+              "target": "Package",
+              "version": "[2.0.0, )"
+            },
+            "TensorFlow.Keras": {
+              "target": "Package",
+              "version": "[0.7.2, )"
+            },
+            "TensorFlow.NET": {
+              "target": "Package",
+              "version": "[0.70.2, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/x64/sdk/6.0.102/RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

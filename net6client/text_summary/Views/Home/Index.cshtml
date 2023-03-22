@@ -1,0 +1,38 @@
+@{
+    ViewBag.Title = "Text Summary";
+    Layout = "_Layout";
+}
+<div class="container">
+    <div class="row" style="max-height: 500px">
+        <div class="col-lg-4">
+            <div class="example-wrap">
+                <h4 class="example-title">Source Text:</h4>
+                <textarea class="form-control" id="sourceTextArea" rows="20"></textarea>
+            </div>
+        </div>
+        <div class="col-lg-4" style="height: 100%">
+            <div style="width: 100%" class="example">
+                    <select id="algorithmSelectBox" class="form-control select2-hidden-accessible" data-plugin="select2" data-select2-id="1" tabindex="-1" aria-hidden="true">
+                        <optgroup label="Algorithm Type" data-select2-id="1">
+                            <option value="0" data-select2-id="1">Yake Algorithm</option>
+                            <option value="1" data-select2-id="2">Keybert Algorithm</option>
+                            <option value="2" data-select2-id="3">TextRank4Zh Algorithm</option>
+                            <option value="3" data-select2-id="4">Rakun Algorithm</option>
+                            <option value="4" data-select2-id="5">Pure Python Extractor Algorithm</option>
+                        </optgroup>
+                    </select>
+                </div>
+            <div class="col-lg-12" style="align-items: center">
+                    <button type="button" id="transformButton" class="btn btn-outline btn-primary">Transform</button>
+                </div>
+        </div>
+        <div class="col-lg-4">
+            <div class="example-wrap">
+                <h4 class="example-title">Key Words:</h4>
+                <textarea class="form-control" id="outputTextArea" rows="20"></textarea>
+            </div>
+        </div>
+    </div>
+</div>
+<label style="display: none;" id="postUrl" >@Url.Action("GetKeywordsFromText", "Home")</label>
+

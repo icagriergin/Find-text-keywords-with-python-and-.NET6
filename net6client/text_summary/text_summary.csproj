@@ -1,0 +1,25 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+    <PropertyGroup>
+        <TargetFramework>net6.0</TargetFramework>
+        <Nullable>enable</Nullable>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <DockerDefaultTargetOS>Windows</DockerDefaultTargetOS>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <Folder Include="wwwroot\css" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <Content Remove="wwwroot\css\site.css" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <PackageReference Include="Azure.AI.TextAnalytics" Version="5.2.0" />
+      <PackageReference Include="Microsoft.ML" Version="2.0.0" />
+      <PackageReference Include="TensorFlow.Keras" Version="0.7.2" />
+      <PackageReference Include="TensorFlow.NET" Version="0.70.2" />
+    </ItemGroup>
+
+</Project>

@@ -1,0 +1,148 @@
+﻿<!DOCTYPE html>
+<html class="no-js css-menubar" lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimal-ui">
+    <meta name="description" content="bootstrap admin template">
+    <meta name="author" content="">
+    
+    <title>Text Summary</title>
+    
+    <link rel="apple-touch-icon" href="/assets/images/apple-touch-icon.png">
+    <link rel="shortcut icon" href="/assets/images/favicon.ico">
+    
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="/global/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/global/css/bootstrap-extend.min.css">
+    <link rel="stylesheet" href="/assets/css/site.min.css">
+    
+
+    <link rel="stylesheet" href="/assets/examples/css/dashboard/v1.css">
+    
+    
+    <!-- Fonts -->
+    <link rel="stylesheet" href="/global/fonts/weather-icons/weather-icons.css">
+    <link rel="stylesheet" href="/global/fonts/web-icons/web-icons.min.css">
+    <link rel="stylesheet" href="/global/fonts/brand-icons/brand-icons.min.css">
+    <link rel='stylesheet' href='http://fonts.googleapis.com/css?family=Roboto:300,400,500,300italic'>
+    
+    <!--[if lt IE 9]>
+    <script src="/global/vendor/html5shiv/html5shiv.min.js"></script>
+    <![endif]-->
+    
+    <!--[if lt IE 10]>
+    <script src="/global/vendor/media-match/media.match.min.js"></script>
+    <script src="/global/vendor/respond/respond.min.js"></script>
+    <![endif]-->
+    
+    <!-- Scripts -->
+    <script src="/global/vendor/breakpoints/breakpoints.js"></script>
+    <script>
+      Breakpoints();
+    </script>
+  </head>
+  <body class="animsition dashboard">
+
+  <nav class="site-navbar navbar navbar-default navbar-inverse navbar-fixed-top navbar-mega" role="navigation">
+      
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggler hamburger hamburger-close navbar-toggler-left hided unfolded" data-toggle="menubar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="hamburger-bar"></span>
+          </button>
+          <button type="button" class="navbar-toggler collapsed" data-target="#site-navbar-collapse" data-toggle="collapse">
+            <i class="icon wb-more-horizontal" aria-hidden="true"></i>
+          </button>
+          <div class="navbar-brand navbar-brand-center site-gridmenu-toggle" data-toggle="gridmenu">
+            <img class="navbar-brand-logo" src="../assets/images/logo.png" title="Remark">
+          </div>
+          <button type="button" class="navbar-toggler collapsed" data-target="#site-navbar-search" data-toggle="collapse">
+            <span class="sr-only">Toggle Search</span>
+            <i class="icon wb-search" aria-hidden="true"></i>
+          </button>
+        </div>
+      
+        <div class="navbar-container container-fluid">
+          <!-- Navbar Collapse -->
+          <div class="collapse navbar-collapse navbar-collapse-toolbar" id="site-navbar-collapse">
+            <!-- Navbar Toolbar -->
+            <ul class="nav navbar-toolbar">
+              <li class="nav-item hidden-float" id="toggleMenubar">
+                <a class="nav-link" data-toggle="menubar" href="#" role="button" style="visibility: hidden">
+                  <i class="icon hamburger hamburger-arrow-left hided unfolded">
+                    <span class="sr-only">Toggle menubar</span>
+                    <span class="hamburger-bar"></span>
+                  </i>
+                </a>
+              </li>
+            </ul>
+            <!-- End Navbar Toolbar -->
+      
+            <!-- Navbar Toolbar Right -->
+            
+            <!-- End Navbar Toolbar Right -->
+      
+            <div class="navbar-brand navbar-brand-center">
+              <a href="index.html">
+                <span style="font-weight: bold; color: white">Text Summary</span>
+              </a>
+            </div>
+          </div>
+          <!-- End Navbar Collapse -->
+      
+          <!-- Site Navbar Seach -->
+          <div class="collapse navbar-search-overlap" id="site-navbar-search">
+            <form role="search">
+              <div class="form-group">
+                <div class="input-search">
+                  <i class="input-search-icon wb-search" aria-hidden="true"></i>
+                  <input type="text" class="form-control" name="site-search" placeholder="Search...">
+                  <button type="button" class="input-search-close icon wb-close" data-target="#site-navbar-search" data-toggle="collapse" aria-label="Close"></button>
+                </div>
+              </div>
+            </form>
+          </div>
+          <!-- End Site Navbar Seach -->
+        </div>
+      </nav>
+  <div class="page">
+    <div class="page-content container-fluid">
+      @RenderBody()
+    </div>
+  </div>
+  <!-- Footer -->
+    <footer class="site-footer">
+      <div class="site-footer-legal">2023 <a href="http://themeforest.net/item/remark-responsive-bootstrap-admin-template/11989202">Cihan Çınar</a></div>
+    </footer>
+  <!-- Core  -->
+    
+    <script src="/global/vendor/babel-external-helpers/babel-external-helpers.js"></script>
+    <script src="/global/vendor/jquery/jquery.js"></script>
+    <script src="/global/vendor/popper-js/umd/popper.min.js"></script>
+    <script src="/global/vendor/bootstrap/bootstrap.js"></script>
+  <script src="js/site.js"></script>
+
+    <!-- Scripts -->
+    <script src="/global/js/Component.js"></script>
+    <script src="/global/js/Plugin.js"></script>
+    <script src="/global/js/Base.js"></script>
+    <script src="/global/js/Config.js"></script>
+    
+    <script src="/assets/js/Section/Menubar.js"></script>
+    <script src="/assets/js/Section/Sidebar.js"></script>
+    <script src="/assets/js/Section/PageAside.js"></script>
+    <script src="/assets/js/Plugin/menu.js"></script>
+    
+    <!-- Config -->
+    <script src="/global/js/config/colors.js"></script>
+    <script src="/assets/js/config/tour.js"></script>
+    <script>Config.set('assets', '/assets');</script>
+    
+    <!-- Page -->
+    <script src="/assets/js/Site.js"></script>
+
+        <script src="/assets/examples/js/dashboard/v1.js"></script>
+        @await RenderSectionAsync("Scripts", required: false)
+  </body>
+</html>
